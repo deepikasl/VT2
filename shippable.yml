@@ -1,6 +1,8 @@
 jobs:
   - name: test
     type: externalCI
+    steps:
+      - IN: res
 
 resources:
   - name: res
