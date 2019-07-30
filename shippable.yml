@@ -3,7 +3,6 @@ jobs:
     type: externalCI
     steps:
       - IN: res
-
 resources:
   - name: res
     type: externalCIServer
