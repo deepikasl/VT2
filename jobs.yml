@@ -1,5 +1,27 @@
-jobs:
-  - name: vt2
-    type: manifest
-    steps:
-      - GET vt2-docker
+resources:
+  - name: github
+    type: GitRepo
+    configuration:
+      path: deepikasl/VT1
+      gitProvider: deepikaGithub
+ 
+pipelines:
+  - name: pipeline
+    steps:          
+      - name: bash
+        type: Bash
+        configuration:
+          inputResources:
+            - name: github
+        execution:
+          onExecute:
+            - echo "executing bash step..."
+      - name: bash2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: bash
+        execution:
+          onExecute:
+            - echo "executing bash2 step..."
+  
