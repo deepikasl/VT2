@@ -10,9 +10,9 @@ resources:
       interval: "*/2 14 3 9 *"
  
 pipelines:
-  - name: pipeline
+  - name: pipeline_1
     steps:          
-      - name: bash
+      - name: bash_1
         type: Bash
         configuration:
           inputResources:
@@ -21,11 +21,11 @@ pipelines:
         execution:
           onExecute:
             - echo "executing bash step..."
-      - name: bash2
+      - name: bash_2
         type: Bash
         configuration:
           inputSteps:
-            - name: bash
+            - name: bash_1
         execution:
           onExecute:
             - echo "executing bash2 step..."
