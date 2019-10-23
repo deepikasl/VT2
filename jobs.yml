@@ -1,5 +1,5 @@
 resources:
-  - name: github
+  - name: github2
     type: GitRepo
     configuration:
       path: deepikasl/VT1
@@ -16,7 +16,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: github
+            - name: github2
             - name: myCronTrigger
         execution:
           onExecute:
