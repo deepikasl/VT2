@@ -4,10 +4,6 @@ resources:
     configuration:
       path: deepikasl/VT1
       gitProvider: deepikaGithub
-  - name: myCronTrigger
-    type: CronTrigger
-    configuration:
-      interval: "*/2 14 3 9 *"
  
 pipelines:
   - name: pipeline_1
@@ -17,7 +13,6 @@ pipelines:
         configuration:
           inputResources:
             - name: github2
-            - name: myCronTrigger
         execution:
           onExecute:
             - echo "executing bash step..."
