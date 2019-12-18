@@ -11,6 +11,11 @@ pipelines:
       - name: bash_1
         type: Bash
         configuration:
+          environmentVariables:
+            chart: artifactory
+            appVersion: ''
+            segment: patch
+ 
           inputResources:
             - name: github2
         execution:
