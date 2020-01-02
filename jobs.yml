@@ -15,4 +15,4 @@ pipelines:
             - name: github2
         execution:
           onExecute:
-            - echo "executing bash step..."
+            - echo "executing bash step......"
