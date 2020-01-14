@@ -1,9 +1,9 @@
-resources:
-  - name: github2
-    type: GitRepo
-    configuration:
-      path: deepikasl/VT1
-      gitProvider: deepikaGithub
+# resources:
+#   - name: github2
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/VT1
+#       gitProvider: deepikaGithub
  
 pipelines:
   - name: pipeline_1
@@ -12,7 +12,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: github2
+            - name: gitRepo
         execution:
           onExecute:
             - echo "executing bash step......"
