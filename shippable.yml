@@ -6,3 +6,4 @@ jobs:
 resources:
   - name: res
     type: externalCIServer
+
