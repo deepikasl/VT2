@@ -13,8 +13,8 @@ pipelines:
         configuration:
           inputResources:
             - name: github2
-          integrations:
-            - name: test
+#           integrations:
+#             - name: test
         execution:
           onExecute:
             - echo "executing bash step......"
