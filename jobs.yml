@@ -21,4 +21,5 @@ pipelines:
             - printenv
             - pushd $res_github2_resourcePath
             - source test.sh
+            - echo $runId
 
