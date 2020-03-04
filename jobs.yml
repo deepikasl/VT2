@@ -23,7 +23,7 @@ pipelines:
             - printenv
             - pushd $res_github2_resourcePath
             - ls
-            - source ./test.sh
+            - source test.sh
             - echo $runId
             - popd
 
