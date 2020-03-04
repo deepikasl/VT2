@@ -20,5 +20,5 @@ pipelines:
             - echo "executing bash step......"
             - printenv
             - pushd $res_github2_resourcePath
-            - ls
+            - source test.sh
 
