@@ -19,5 +19,6 @@ pipelines:
           onExecute:
             - echo "executing bash step......"
             - printenv
-            - source res_github2_resourcePath/test.sh
+            - pushd res_github2_resourcePath
+            - ls
 
