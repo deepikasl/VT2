@@ -15,8 +15,8 @@ pipelines:
         configuration:
           inputResources:
             - name: github2
-#           integrations:
-#             - name: test
+          integrations:
+            - name: deepikaSlack
         execution:
           onExecute:
             - echo "executing bash step......"
