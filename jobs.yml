@@ -22,8 +22,8 @@ pipelines:
       - name: bash_1
         type: Bash
         configuration:
-          inputResources:
-            - name: github2
+#           inputResources:
+#             - name: github2
           integrations:
             - name: deepikaSlack
         execution:
