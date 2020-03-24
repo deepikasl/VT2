@@ -34,5 +34,5 @@ pipelines:
 #             - ls
 #             - source test.sh
 #             - echo $runId
-            - popd
+#             - popd
 
