@@ -10,11 +10,13 @@ resources:
 pipelines:
   - name: pipeline_1
     configuration:
+      integrations:
+        - name: aws
       runtime:            
         type: image
         image:
           custom:
-            name: shippabledocker/jfreq
+            name: i_aws/ubuntu
             tag: latest
             region: us-east-1
     steps:          
