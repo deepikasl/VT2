@@ -17,6 +17,12 @@ pipelines:
             - name: github2
           integrations:
             - name: deepikaSlack
+          runtime:            
+            type: image
+              custom:
+                name: shippabledocker/jfreq
+                tag: latest
+                region: us-east-1
         execution:
           onExecute:
             - echo "executing bash step......"
