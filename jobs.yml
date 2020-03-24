@@ -14,7 +14,8 @@ pipelines:
         type: image
         image:
           custom:
-            name: i_aws/ubuntu
+            registry: aws
+            name: ubuntu
             tag: latest
             region: us-east-1
     steps:          
@@ -25,7 +26,6 @@ pipelines:
             - name: github2
           integrations:
             - name: deepikaSlack
-            - name: aws
         execution:
           onExecute:
             - echo "executing bash step......"
