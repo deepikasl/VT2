@@ -10,8 +10,6 @@ resources:
 pipelines:
   - name: pipeline_1
     configuration:
-      integrations:
-        - name: aws
       runtime:            
         type: image
         image:
@@ -27,6 +25,7 @@ pipelines:
             - name: github2
           integrations:
             - name: deepikaSlack
+            - name: aws
         execution:
           onExecute:
             - echo "executing bash step......"
