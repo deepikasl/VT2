@@ -19,6 +19,7 @@ pipelines:
             - name: deepikaSlack
           runtime:            
             type: image
+            image:
               custom:
                 name: shippabledocker/jfreq
                 tag: latest
