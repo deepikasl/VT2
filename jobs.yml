@@ -24,9 +24,9 @@ pipelines:
         configuration:
           inputResources:
             - name: github2
-          integrations:
-            - name: deepikaSlack
-            - name: deepikaAzure
+#           integrations:
+#             - name: deepikaSlack
+#             - name: deepikaAzure
         execution:
           onExecute:
             - echo "executing bash step......"
