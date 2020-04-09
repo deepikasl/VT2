@@ -6,7 +6,20 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master
- 
+ - name: github3
+    type: GitRepo
+    configuration:
+      path: deepikasl/VT2
+      gitProvider: deepikaGithub
+      branches:
+        include: master
+  - name: github4
+    type: GitRepo
+    configuration:
+      path: deepikasl/VT1
+      gitProvider: deepikaGithub
+      branches:
+        include: demo
 pipelines:
   - name: pipeline_1
 #     configuration:
