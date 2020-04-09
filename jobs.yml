@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       path: deepikasl/VT1
-      gitProvider: github
+      gitProvider: deepikaGithub
       branches:
         include: master
 pipelines:
