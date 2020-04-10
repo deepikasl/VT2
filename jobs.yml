@@ -9,7 +9,7 @@ resources:
   - name: github3
     type: GitRepo
     configuration:
-      path: deepikasl/VT2
+      path: deepikasl/VT22
       gitProvider: deepikaGithub
       branches:
         include: master
