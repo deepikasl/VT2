@@ -12,7 +12,7 @@ resources:
       path: deepikasl/VT2
       gitProvider: deepikaGithub
       branches:
-        include: master
+        include: masterabdmcs
 pipelines:
   - name: pipeline_1
 #     configuration:
