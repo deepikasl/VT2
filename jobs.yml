@@ -30,6 +30,7 @@ pipelines:
         configuration:
           inputResources:
             - name: github2
+            - name: github3
 #           integrations:
 #             - name: deepikaSlack
 #             - name: deepikaAzure
