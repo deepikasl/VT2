@@ -9,10 +9,10 @@ resources:
   - name: github3
     type: GitRepo
     configuration:
-      path: deepikasl/VT22
+      path: deepikasl/VT2
       gitProvider: deepikaGithub
       branches:
-        include: master
+        include: mastermwsdcdfvbxc
 pipelines:
   - name: pipeline_1
 #     configuration:
