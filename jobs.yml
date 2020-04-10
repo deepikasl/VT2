@@ -13,6 +13,12 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: masterabdmcs
+  - name: go_build_info_publish_gb
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: go_example_build_publish
+      buildNumber: 1
 pipelines:
   - name: pipeline_1
 #     configuration:
@@ -31,6 +37,7 @@ pipelines:
           inputResources:
             - name: github2
             - name: github3
+            - name: go_build_info_publish_gb
 #           integrations:
 #             - name: deepikaSlack
 #             - name: deepikaAzure
