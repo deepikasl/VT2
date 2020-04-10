@@ -13,7 +13,7 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: masterabdmcs
-  - name: go_build_info_publish_gb1
+  - name: go_build_info_publish_gb
     type: BuildInfo
     configuration:
       sourceArtifactory: art
