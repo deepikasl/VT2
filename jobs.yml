@@ -13,12 +13,12 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: masterabdmcs
-  - name: go_build_info_publish_gb1
-    type: BuildInfo
-    configuration:
-      sourceArtifactory: art
-      buildName: go_example_build_publish
-      buildNumber: 1
+#   - name: go_build_info_publish_gb1
+#     type: BuildInfo
+#     configuration:
+#       sourceArtifactory: art
+#       buildName: go_example_build_publish
+#       buildNumber: 1
 pipelines:
   - name: pipeline_1
 #     configuration:
