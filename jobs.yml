@@ -20,7 +20,7 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master
-  - name: github5
+  - name: github6
     type: GitRepo
     configuration:
       path: deepikasl/sample_node
