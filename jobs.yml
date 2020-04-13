@@ -20,6 +20,13 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master
+  - name: github5
+    type: GitRepo
+    configuration:
+      path: deepikasl/sample_node
+      gitProvider: deepikaGithub
+      branches:
+        include: master
   - name: go_build_info_publish_gb1
     type: BuildInfo
     configuration:
