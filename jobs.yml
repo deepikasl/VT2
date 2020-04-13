@@ -19,7 +19,7 @@ resources:
       path: deepikasl/jfrog_pipelines
       gitProvider: deepikaGithub
       branches:
-        include: master
+        include: masterxdfd
   - name: go_build_info_publish_gb1
     type: BuildInfo
     configuration:
