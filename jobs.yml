@@ -26,7 +26,7 @@ resources:
       path: deepikasl/jfrog_pipelines
       gitProvider: deepikaGithub
       branches:
-        include: test1234567
+        include: test123
   - name: go_build_info_publish_gb1
     type: BuildInfo
     configuration:
