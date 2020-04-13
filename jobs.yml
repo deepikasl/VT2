@@ -1,25 +1,25 @@
 resources:
-  - name: github2
-    type: GitRepo
-    configuration:
-      path: deepikasl/VT1
-      gitProvider: deepikaGithub
-      branches:
-        include: master
-  - name: github3
-    type: GitRepo
-    configuration:
-      path: deepikasl/VT2
-      gitProvider: deepikaGithub
-      branches:
-        include: master
-  - name: github4
-    type: GitRepo
-    configuration:
-      path: deepikasl/jfrog_pipelines
-      gitProvider: deepikaGithub
-      branches:
-        include: master
+#   - name: github2
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/VT1
+#       gitProvider: deepikaGithub
+#       branches:
+#         include: master
+#   - name: github3
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/VT2
+#       gitProvider: deepikaGithub
+#       branches:
+#         include: master
+#   - name: github4
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/jfrog_pipelines
+#       gitProvider: deepikaGithub
+#       branches:
+#         include: master
   - name: go_build_info_publish_gb1
     type: BuildInfo
     configuration:
@@ -42,10 +42,10 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: github2
-            - name: github3
-            - name: github4
-#             - name: go_build_info_publish_gb1
+#             - name: github2
+#             - name: github3
+#             - name: github4
+            - name: go_build_info_publish_gb1
 #           integrations:
 #             - name: deepikaSlack
 #             - name: deepikaAzure
