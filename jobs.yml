@@ -26,7 +26,7 @@ resources:
       path: deepikasl/jfrog_pipelines
       gitProvider: deepikaGithub
       branches:
-        include: tesing123456
+        include: tesing1234567
   - name: go_build_info_publish_gb1
     type: BuildInfo
     configuration:
