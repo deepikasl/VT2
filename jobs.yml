@@ -25,7 +25,7 @@ resources:
     configuration:
       sourceArtifactory: art
       buildName: go_example_build_publish
-      buildNumber: 2
+      buildNumber: 3
 pipelines:
   - name: pipeline_1
 #     configuration:
