@@ -24,15 +24,15 @@ resources:
     type: GitRepo
     configuration:
       path: deepikasl/sample_node
-      gitProvider: deepikaGithub
+      gitProvider: github
       branches:
         include: master
-  - name: go_build_info_publish_gb1
-    type: BuildInfo
-    configuration:
-      sourceArtifactory: art
-      buildName: go_example_build_publish
-      buildNumber: 8
+#   - name: go_build_info_publish_gb1
+#     type: BuildInfo
+#     configuration:
+#       sourceArtifactory: art
+#       buildName: go_example_build_publish
+#       buildNumber: 8
 pipelines:
   - name: pipeline_1
 #     configuration:
