@@ -75,7 +75,7 @@ pipelines:
 #             - name: deepikaAzure
         execution:
           onExecute:
-            - echo "executing bash stepab......"
+            - echo "executing bash stepabc......"
             - printenv
 #             - az image list
 #             - pushd $res_github2_resourcePath
