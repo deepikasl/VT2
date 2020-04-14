@@ -12,7 +12,7 @@ resources:
       path: deepikasl/VT2
       gitProvider: deepikaGithub
       branches:
-        include: master1
+        include: master
   - name: github4
     type: GitRepo
     configuration:
