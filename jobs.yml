@@ -48,13 +48,13 @@ resources:
       gitProvider: test
       branches:
         include: master1
-  - name: github12
-    type: GitRepo
-    configuration:
-      path: deepikasl/sample_node
-      gitProvider: test
-      branches:
-        include: master13
+#   - name: github12
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/sample_node
+#       gitProvider: test
+#       branches:
+#         include: master13
   - name: go_build_info_publish_gb8
     type: BuildInfo
     configuration:
