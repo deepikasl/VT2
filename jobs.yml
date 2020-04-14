@@ -5,7 +5,7 @@ resources:
       path: deepikasl/VT1
       gitProvider: github
       branches:
-        include: master1
+        include: master2
   - name: github3
     type: GitRepo
     configuration:
