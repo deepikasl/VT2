@@ -26,7 +26,7 @@ resources:
       path: deepikasl/jfrog_pipelines
       gitProvider: github
       branches:
-        include: master
+        include: master1
   - name: github8
     type: GitRepo
     configuration:
