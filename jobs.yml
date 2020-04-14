@@ -20,20 +20,20 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master
-  - name: github7
-    type: GitRepo
-    configuration:
-      path: deepikasl/jfrog_pipelines
-      gitProvider: github
-      branches:
-        include: master
-#   - name: github8
+#   - name: github7
 #     type: GitRepo
 #     configuration:
 #       path: deepikasl/jfrog_pipelines
-#       gitProvider: deepikaGithub
+#       gitProvider: github
 #       branches:
-#         include: master1
+#         include: master
+  - name: github8
+    type: GitRepo
+    configuration:
+      path: deepikasl/jfrog_pipelines
+      gitProvider: deepikaGithub
+      branches:
+        include: master1
   - name: github9
     type: GitRepo
     configuration:
@@ -81,7 +81,7 @@ pipelines:
             - name: github3
             - name: github4
             - name: github9
-            - name: github7
+#             - name: github7
 #             - name: github8
             - name: go_build_info_publish_gb8
 #           integrations:
