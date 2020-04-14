@@ -38,7 +38,7 @@ resources:
     type: GitRepo
     configuration:
       path: deepikasl/sample_node
-      gitProvider: deepikaGithub
+      gitProvider: github
       branches:
         include: master
 #   - name: go_build_info_publish_gb1
