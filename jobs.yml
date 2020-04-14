@@ -91,7 +91,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-#             - name: github2
+            - name: github2
             - name: github3
             - name: github4
             - name: github9
