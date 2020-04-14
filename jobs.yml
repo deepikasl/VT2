@@ -52,7 +52,7 @@ resources:
     type: GitRepo
     configuration:
       path: deepikasl/sample_node
-      gitProvider: github
+      gitProvider: test
       branches:
         include: master
 #   - name: github11
