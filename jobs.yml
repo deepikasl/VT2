@@ -48,19 +48,19 @@ resources:
       gitProvider: test
       branches:
         include: master1
-#   - name: github12
-#     type: GitRepo
-#     configuration:
-#       path: deepikasl/sample_node
-#       gitProvider: test
-#       branches:
-#         include: master13
+  - name: github12
+    type: GitRepo
+    configuration:
+      path: deepikasl/sample_node
+      gitProvider: test
+      branches:
+        include: master13
   - name: go_build_info_publish_gb8
     type: BuildInfo
     configuration:
       sourceArtifactory: art
       buildName: go_example_build_publish
-      buildNumber: 10
+      buildNumber: 11
 pipelines:
   - name: pipeline_1
 #     configuration:
