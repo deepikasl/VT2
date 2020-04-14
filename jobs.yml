@@ -17,7 +17,7 @@ resources:
     type: GitRepo
     configuration:
       path: deepikasl/jfrog_pipelines
-      gitProvider: github
+      gitProvider: test
       branches:
         include: master
   - name: github19
