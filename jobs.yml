@@ -54,7 +54,7 @@ resources:
       path: deepikasl/sample_node
       gitProvider: test
       branches:
-        include: master
+        include: master1
   - name: go_build_info_publish_gb8
     type: BuildInfo
     configuration:
