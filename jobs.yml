@@ -33,7 +33,7 @@ resources:
       path: deepikasl/jfrog_pipelines
       gitProvider: deepikaGithub
       branches:
-        include: master
+        include: master1
   - name: github6
     type: GitRepo
     configuration:
