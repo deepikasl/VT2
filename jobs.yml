@@ -68,6 +68,7 @@ pipelines:
             - name: github4
             - name: github6
             - name: github7
+            - name: github8
 #             - name: go_build_info_publish_gb1
 #           integrations:
 #             - name: deepikaSlack
