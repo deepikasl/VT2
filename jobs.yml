@@ -20,11 +20,25 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master
+  - name: github7
+    type: GitRepo
+    configuration:
+      path: deepikasl/jfrog_pipelines
+      gitProvider: github
+      branches:
+        include: master
+  - name: github8
+    type: GitRepo
+    configuration:
+      path: deepikasl/jfrog_pipelines
+      gitProvider: deepikaGithub
+      branches:
+        include: master
   - name: github6
     type: GitRepo
     configuration:
       path: deepikasl/sample_node
-      gitProvider: github
+      gitProvider: deepikaGithub
       branches:
         include: master
 #   - name: go_build_info_publish_gb1
