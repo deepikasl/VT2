@@ -6,6 +6,10 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master
+  - name: cron
+    type: CronTrigger
+    configuration: 
+      interval: "*/2 * * * *"
  
 pipelines:
   - name: pipeline_1
@@ -24,9 +28,10 @@ pipelines:
         configuration:
           inputResources:
             - name: github2
-          integrations:
-            - name: deepikaSlack
-            - name: deepikaAzure
+            - name: cron
+#           integrations:
+#             - name: deepikaSlack
+#             - name: deepikaAzure
         execution:
           onExecute:
             - echo "executing bash step......"
