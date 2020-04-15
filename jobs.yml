@@ -1,5 +1,5 @@
 resources:
-  - name: github2
+  - name: github_deep
     type: GitRepo
     configuration:
       path: deepikasl/VT1
@@ -27,7 +27,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: github2
+            - name: github_deep
             - name: cron
 #           integrations:
 #             - name: deepikaSlack
