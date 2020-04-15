@@ -55,13 +55,13 @@ resources:
       gitProvider: github
       branches:
         include: master
-  - name: github11
-    type: GitRepo
-    configuration:
-      path: deepikasl/jfrog_pipelines
-      gitProvider: test
-      branches:
-        include: master1
+#   - name: github11
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/jfrog_pipelines
+#       gitProvider: test
+#       branches:
+#         include: master1
 #   - name: github12
 #     type: GitRepo
 #     configuration:
