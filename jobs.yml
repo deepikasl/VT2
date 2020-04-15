@@ -13,13 +13,13 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master
-  - name: github4
-    type: GitRepo
-    configuration:
-      path: deepikasl/jfrog_pipelines
-      gitProvider: test
-      branches:
-        include: master
+#   - name: github4
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/jfrog_pipelines
+#       gitProvider: test
+#       branches:
+#         include: master
   - name: github19
     type: GitRepo
     configuration:
@@ -93,7 +93,7 @@ pipelines:
           inputResources:
             - name: github2
             - name: github3
-            - name: github4
+#             - name: github4
             - name: github15
 #             - name: github7
 #             - name: github8
