@@ -48,11 +48,11 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master1
-  - name: github9
+  - name: github15
     type: GitRepo
     configuration:
       path: deepikasl/sample_node
-      gitProvider: test
+      gitProvider: github
       branches:
         include: master
   - name: github11
@@ -94,7 +94,7 @@ pipelines:
             - name: github2
             - name: github3
             - name: github4
-            - name: github9
+            - name: github15
 #             - name: github7
 #             - name: github8
             - name: go_build_info_publish_gb8
