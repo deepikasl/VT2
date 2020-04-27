@@ -75,12 +75,12 @@ resources:
 #       sourceArtifactory: art
 #       buildName: go_example_build_publish
 #       buildNumber: 11
-  - name: jfrogFEFS_cp
-    type: FileSpec
-    configuration:
-      sourceArtifactory: entArt
-      pattern: "libs-releases-local/com/jfrog/platform/jfrog-frontend-bin/${jfrogFEVersion}/*"
-      recursive: false
+#   - name: jfrogFEFS_cp
+#     type: FileSpec
+#     configuration:
+#       sourceArtifactory: entArt
+#       pattern: "libs-releases-local/com/jfrog/platform/jfrog-frontend-bin/${jfrogFEVersion}/*"
+#       recursive: false
 pipelines:
   - name: pipeline_1
 #     configuration:
