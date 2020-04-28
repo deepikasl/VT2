@@ -100,6 +100,10 @@ pipelines:
             - name: github2
             - name: github3
             - name: github19
+            - name: github20
+            - name: github7
+            - name: github8
+            - name: github15
         execution:
           onExecute:
             - echo "executing bash stepabcd......"
