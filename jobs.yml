@@ -1,45 +1,26 @@
 resources:
-  - name: github_deep
+  - name: vt1
     type: GitRepo
     configuration:
       path: deepikasl/VT1
       gitProvider: deepikaGithub
       branches:
         include: master
-  - name: cron
+  - name: cron2
     type: CronTrigger
     configuration: 
       interval: "*/2 * * * *"
  
 pipelines:
-  - name: pipeline_1
-#     configuration:
-#       runtime:            
-#         type: image
-#         image:
-#           custom:
-#             registry: aws
-#             name: ubuntu
-#             tag: latest
-#             region: us-east-1
+  - name: pipeline_cron
     steps:          
-      - name: bash_1
+      - name: bash_cron
         type: Bash
         configuration:
           inputResources:
-            - name: github_deep
-            - name: cron
-#           integrations:
-#             - name: deepikaSlack
-#             - name: deepikaAzure
+            - name: vt1
+            - name: cron2
         execution:
           onExecute:
             - echo "executing bash step......"
             - printenv
-#             - az image list
-#             - pushd $res_github2_resourcePath
-#             - ls
-#             - source test.sh
-#             - echo $runId
-#             - popd
-
