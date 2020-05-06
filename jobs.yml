@@ -9,7 +9,7 @@ resources:
   - name: cron2
     type: CronTrigger
     configuration: 
-      interval: "* */16 * * *"
+      interval: "0 */16 * * *"
  
 pipelines:
   - name: pipeline_cron
