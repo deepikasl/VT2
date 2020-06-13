@@ -93,12 +93,12 @@ pipelines:
 #             tag: latest
 #             region: us-east-1
     steps:   
-      - name: jenkinsStep
-        type: Jenkins
-        configuration:
-          jenkinsJobName: jfrog_samples
-        integrations:
-            - name: jenkinsTest
+#       - name: jenkinsStep
+#         type: Jenkins
+#         configuration:
+#           jenkinsJobName: jfrog_samples
+#         integrations:
+#             - name: jenkinsTest
       - name: bash_1
         type: Bash
         configuration:
