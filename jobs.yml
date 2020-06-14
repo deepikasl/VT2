@@ -82,7 +82,7 @@ resources:
       pattern: "libs-releases-local/com/jfrog/platform/jfrog-frontend-bin/${jfrogFEVersion}/*"
       recursive: false
 pipelines:
-  - name: pipeline_1
+  - name: pipeline_test_long_name
 #     configuration:
 #       runtime:            
 #         type: image
