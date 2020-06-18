@@ -99,9 +99,24 @@ pipelines:
 #           jenkinsJobName: jfrog_samples
 #         integrations:
 #             - name: jenkinsTest
+      - name: test_app
+        type: Jenkins
+        configuration:
+          jenkinsJobName: basic-api-mb
+          jenkinsBranchName: dev
+          inputResources:
+            - name: jfrogFEFS_cp
+          buildParameters:
+            runNumber: '${run_number}'
+            imageName: '${run_number}'
+            imageTag: '${run_number}'
+          integrations:
+            - name: jenkins
       - name: bash_1
         type: Bash
         configuration:
+          inputSteps:
+            - name: test_app
           inputResources:
             - name: github2
             - name: github3
