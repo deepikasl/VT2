@@ -20,61 +20,61 @@ resources:
 #       gitProvider: test
 #       branches:
 #         include: master
-  - name: github19
-    type: GitRepo
-    configuration:
-      path: deepikasl/jfrog_pipelines
-      gitProvider: github
-      branches:
-        include: master
-  - name: github20
-    type: GitRepo
-    configuration:
-      path: deepikasl/jfrog_pipelines
-      gitProvider: github
-      branches:
-        include: master
-  - name: github7
-    type: GitRepo
-    configuration:
-      path: deepikasl/jfrog_pipelines
-      gitProvider: github
-      branches:
-        include: master
-  - name: github8
-    type: GitRepo
-    configuration:
-      path: deepikasl/jfrog_pipelines
-      gitProvider: deepikaGithub
-      branches:
-        include: master1
-  - name: github15
-    type: GitRepo
-    configuration:
-      path: deepikasl/sample_node
-      gitProvider: github
-      branches:
-        include: master
-#   - name: github11
+#   - name: github19
 #     type: GitRepo
 #     configuration:
 #       path: deepikasl/jfrog_pipelines
-#       gitProvider: test
+#       gitProvider: github
+#       branches:
+#         include: master
+#   - name: github20
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/jfrog_pipelines
+#       gitProvider: github
+#       branches:
+#         include: master
+#   - name: github7
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/jfrog_pipelines
+#       gitProvider: github
+#       branches:
+#         include: master
+#   - name: github8
+#     type: GitRepo
+#     configuration:
+#       path: deepikasl/jfrog_pipelines
+#       gitProvider: deepikaGithub
 #       branches:
 #         include: master1
-#   - name: github12
+#   - name: github15
 #     type: GitRepo
 #     configuration:
 #       path: deepikasl/sample_node
-#       gitProvider: test
+#       gitProvider: github
 #       branches:
-#         include: master13
-#   - name: go_build_info_publish_gb8
-#     type: BuildInfo
-#     configuration:
-#       sourceArtifactory: art
-#       buildName: go_example_build_publish
-#       buildNumber: 11
+#         include: master
+# #   - name: github11
+# #     type: GitRepo
+# #     configuration:
+# #       path: deepikasl/jfrog_pipelines
+# #       gitProvider: test
+# #       branches:
+# #         include: master1
+# #   - name: github12
+# #     type: GitRepo
+# #     configuration:
+# #       path: deepikasl/sample_node
+# #       gitProvider: test
+# #       branches:
+# #         include: master13
+# #   - name: go_build_info_publish_gb8
+# #     type: BuildInfo
+# #     configuration:
+# #       sourceArtifactory: art
+# #       buildName: go_example_build_publish
+# #       buildNumber: 11
   - name: jfrogFEFS_cp
     type: FileSpec
     configuration:
@@ -120,11 +120,11 @@ pipelines:
           inputResources:
             - name: github2
             - name: github3
-            - name: github19
-            - name: github20
-            - name: github7
-            - name: github8
-            - name: github15
+#             - name: github19
+#             - name: github20
+#             - name: github7
+#             - name: github8
+#             - name: github15
         execution:
           onExecute:
             - echo "executing bash stepabcd......"
