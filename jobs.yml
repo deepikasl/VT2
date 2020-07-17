@@ -31,6 +31,16 @@ pipelines:
           onExecute:
             - echo "executing bash stepab......"
             - printenv
+            - echo "this branch is {{gitBranch}} "
+            - echo "executing bash step..."
+            - echo "state=$run_number" > pipeline_state.txt
+            - add_pipeline_files pipeline_state.txt pipeline_state_file
+            - echo "state=$run_number" > run_state.txt
+            - add_run_files run_state.txt run_state_file
+            - echo "state=$run_number" > cache.txt
+            - restore_run_files run_state_file run_state.txt
+            - restore_cache_files pipeline_state_cache cache.txt
+            - add_cache_files cache.txt pipeline_state_cache
 #             - az image list
 #             - pushd $res_github2_resourcePath
 #             - ls
