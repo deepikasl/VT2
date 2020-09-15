@@ -75,12 +75,12 @@ resources:
 # #       sourceArtifactory: art
 # #       buildName: go_example_build_publish
 # #       buildNumber: 11
-  - name: jfrogFEFS_cp
-    type: FileSpec
-    configuration:
-      sourceArtifactory: art
-      pattern: "libs-releases-local/com/jfrog/platform/jfrog-frontend-bin/${jfrogFEVersion}/*"
-      recursive: false
+#   - name: jfrogFEFS_cp
+#     type: FileSpec
+#     configuration:
+#       sourceArtifactory: art
+#       pattern: "libs-releases-local/com/jfrog/platform/jfrog-frontend-bin/${jfrogFEVersion}/*"
+#       recursive: false
 pipelines:
   - name: pipeline_test_long_name
 #     configuration:
@@ -99,24 +99,24 @@ pipelines:
 #           jenkinsJobName: jfrog_samples
 #         integrations:
 #             - name: jenkinsTest
-      - name: test_app
-        type: Jenkins
-        configuration:
-          jenkinsJobName: basic-api-mb
-          jenkinsBranchName: dev
-          inputResources:
-            - name: jfrogFEFS_cp
-          buildParameters:
-            runNumber: '${run_number}'
-            imageName: '${run_number}'
-            imageTag: '${run_number}'
-          integrations:
-            - name: jenkins
+#       - name: test_app
+#         type: Jenkins
+#         configuration:
+#           jenkinsJobName: basic-api-mb
+#           jenkinsBranchName: dev
+#           inputResources:
+#             - name: jfrogFEFS_cp
+#           buildParameters:
+#             runNumber: '${run_number}'
+#             imageName: '${run_number}'
+#             imageTag: '${run_number}'
+#           integrations:
+#             - name: jenkins
       - name: bash_1
         type: Bash
         configuration:
-          inputSteps:
-            - name: test_app
+#           inputSteps:
+#             - name: test_app
           inputResources:
             - name: github2
             - name: github3
