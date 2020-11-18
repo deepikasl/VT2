@@ -13,6 +13,13 @@ resources:
       gitProvider: deepikaGithub
       branches:
         include: master
+  - name: github4
+    type: GitRepo
+    configuration:
+      path: deepikasl/VT2
+      gitProvider: deepikaGithub
+      branches:
+        include: master
 #   - name: github4
 #     type: GitRepo
 #     configuration:
@@ -119,6 +126,7 @@ pipelines:
 #             - name: test_app
           inputResources:
             - name: github2
+          outputResources:
             - name: github3
 #             - name: github19
 #             - name: github20
