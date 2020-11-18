@@ -127,7 +127,7 @@ pipelines:
           inputResources:
             - name: github2
           outputResources:
-            - name: github3
+            - name: github4
 #             - name: github19
 #             - name: github20
 #             - name: github7
