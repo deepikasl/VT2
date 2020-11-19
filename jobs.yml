@@ -12,14 +12,14 @@ resources:
       interval: "0 */16 * * *"
  
 pipelines:
-  - name: pipeline_cron
+  - name: pipeline_gen
     steps:          
       - name: bash_cron
         type: Bash
         configuration:
           inputResources:
             - name: vt1
-            - name: cron2
+#             - name: cron2
         execution:
           onExecute:
             - echo "executing bash step......"
