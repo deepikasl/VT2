@@ -28,7 +28,7 @@ pipelines:
         configuration:
           inputResources:
             - name: github_deep
-            - name: cron
+#             - name: cron
 #           integrations:
 #             - name: deepikaSlack
 #             - name: deepikaAzure
