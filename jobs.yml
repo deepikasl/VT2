@@ -8,7 +8,7 @@ resources:
         include: master
  
 pipelines:
-  - name: pipeline_1
+  - name: pipeline_12
 #     configuration:
 #       runtime:            
 #         type: image
@@ -19,7 +19,7 @@ pipelines:
 #             tag: latest
 #             region: us-east-1
     steps:          
-      - name: bash_1
+      - name: bash_12
         type: Bash
         configuration:
           inputResources:
